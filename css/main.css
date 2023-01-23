@@ -20,9 +20,9 @@
   src: url(../font/RobotoCondensed-Regular.ttf);
 }
 :root {
-  --bg-color-primery: #191919;
-  --color-text-primery: rgba(255, 255, 255, 0.8);
-  --color-title: #e7e7e7;
+  --bg-color-primery: rgba(255, 255, 255, 0.8);
+  --color-text-primery: #191919;
+  --color-title: #191919;
   --color-btn: rgba(255, 255, 255, 0.9);
   --bg-btn-hero: #df3d3a;
   --bg-btn-hover-hero: #b5302d;
@@ -1463,6 +1463,7 @@ button {
 }
 
 .feedback__action {
+  margin-bottom: 24px;
   font-size: 16px;
   line-height: 1.25;
 }
