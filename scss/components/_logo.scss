@@ -1,0 +1,20 @@
+.logo {
+    display: block;
+    color: var(--color-title);
+}
+
+.logo__icon {
+    fill: currentColor;
+
+    &--big {
+        @include mq(no-desk) {
+            display: none;
+        }
+    }
+
+    &--small {
+        @include mq(desk) {
+            display: none;
+        }
+    }
+}

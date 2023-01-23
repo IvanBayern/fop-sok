@@ -1,0 +1,144 @@
+.review {
+  @include section;
+  @include mq(tab) {
+    @include section(50px, 50px);
+    @include mq(desk) {
+      @include section(85px, 85px);
+    }
+  }
+}
+.fade {
+  @include mq(desk) {
+    position: relative;
+    margin-left: -80px;
+    min-width: 1360px;
+  }
+}
+
+.review__title {
+  @extend %title;
+  @include mq(desk) {
+    margin-left: 1070px;
+  }
+}
+.review__video {
+  margin-bottom: 32px;
+  width: 280px;
+  height: 155px;
+  @include mq(tab) {
+    width: 640px;
+    height: 360px;
+  }
+  @include mq(desk) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 920px;
+    height: 520px;
+  }
+}
+
+.review__link {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: var(--bg-btn-hero);
+  @include mq(desk) {
+    margin-left: 1070px;
+    font-size: 28px;
+  }
+}
+
+.review__text {
+  margin-bottom: 32px;
+  @include mq(desk) {
+    margin-left: 1070px;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 39px;
+  @include mq(tab) {
+    gap: 80px;
+  }
+  @include mq(desk) {
+    justify-content: flex-start;
+    margin-left: 1070px;
+  }
+}
+.slick-dots li {
+  margin-right: 0;
+  margin-left: 0;
+  width: 20px;
+  height: 25px;
+  @include mq(desk) {
+    width: 28px;
+    height: 35px;
+  }
+}
+.slick-dots li button {
+  width: 20px;
+  height: 25px;
+  // padding: 0;
+  // border: none;
+  // outline: none;
+  @include mq(desk) {
+    width: 28px;
+    height: 35px;
+  }
+}
+.slick-dots li button[aria-label='1 of 3']:before {
+  content: '';
+  opacity: 0.4;
+  width: 20px;
+  height: 25px;
+  color: transparent;
+  background-image: url(../images/icons/btn01.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include mq(desk) {
+    width: 28px;
+    height: 35px;
+    background-image: url(../images/icons/01-desk.svg);
+  }
+}
+.slick-dots li button[aria-label='2 of 3']:before {
+  content: '';
+  opacity: 0.4;
+  width: 20px;
+  height: 25px;
+  color: transparent;
+  background-image: url(../images/icons/btn02.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include mq(desk) {
+    width: 28px;
+    height: 35px;
+    background-image: url(../images/icons/02-desk.svg);
+  }
+}
+.slick-dots li button[aria-label='3 of 3']:before {
+  content: '';
+  opacity: 0.4;
+  width: 20px;
+  height: 25px;
+  color: transparent;
+  background-image: url(../images/icons/btn03.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include mq(desk) {
+    width: 28px;
+    height: 35px;
+    background-image: url(../images/icons/03-desk.svg);
+  }
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}

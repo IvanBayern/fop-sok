@@ -1,0 +1,16 @@
+.photo {
+  @include section;
+  @include mq(tab) {
+    @include section(50px, 50px);
+  }
+  @include mq(desk) {
+    @include section(85px, 85px);
+  }
+}
+.photo__img {
+  @include mq(desk) {
+    min-width: 1440px;
+    margin-right: -80px;
+    margin-left: -80px;
+  }
+}

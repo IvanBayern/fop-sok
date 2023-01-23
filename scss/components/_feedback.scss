@@ -1,0 +1,11 @@
+.feedback {
+  @include section;
+}
+.feedback__title {
+  @extend %title;
+}
+.feedback__action {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.25;
+}

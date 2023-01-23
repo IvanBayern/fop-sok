@@ -1,0 +1,92 @@
+.hero {
+  @include section(0);
+  @include mq(tab) {
+    @include section(0, 50px);
+  }
+  @include mq(desk) {
+    @include section(0, 85px);
+  }
+}
+
+.hero__container {
+  @include mq(tab) {
+    @include flexed(flex-start, space-between);
+    gap: 60px;
+  }
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: 1.25;
+  @include mq(tab) {
+    font-size: 16px;
+    line-height: 1.45;
+    @include mq(desk) {
+      line-height: 1.25;
+    }
+  }
+}
+
+.hero__text:nth-child(1) {
+  margin-bottom: 16px;
+  @include mq(desk) {
+    margin-bottom: 36px;
+  }
+}
+
+.hero__text:nth-child(2) {
+  margin-bottom: 32px;
+  @include mq(tab-only) {
+    margin-bottom: 105px;
+  }
+}
+
+@include mq(desk) {
+  .hero__title-container {
+    padding-left: 104px;
+    padding-top: 110px;
+    width: 574px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 32px;
+
+  color: var(--color-title);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  @include mq(tab) {
+    margin-bottom: 40px;
+
+    font-size: 42px;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 60px;
+    color: var(--color-title);
+    font-weight: 600;
+    font-size: 74px;
+    line-height: 1;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
+
+.hero__btn {
+  @extend %btn;
+  @include mq(mob-only) {
+    margin-bottom: 32px;
+  }
+}
+.hero__image {
+  @include mq(tab) {
+    margin-right: -60px;
+  }
+  @include mq(desk) {
+    margin-right: -80px;
+  }
+}

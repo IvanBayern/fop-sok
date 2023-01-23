@@ -1,0 +1,56 @@
+@mixin mq($type) {
+  $mob: 320px;
+  $tab: 768px;
+  $desk: 1440px;
+
+  @if $type ==mob-only {
+    @media screen and (max-width: ($tab - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type ==mob {
+    @media screen and (min-width: $mob) {
+      @content;
+    }
+  }
+
+  @if $type ==tab {
+    @media screen and (min-width: $tab) {
+      @content;
+    }
+  }
+
+  @if $type ==tab-only {
+    @media screen and (min-width: $tab) and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type ==desk {
+    @media screen and (min-width: $desk) {
+      @content;
+    }
+  }
+
+  @if $type ==no-desk {
+    @media screen and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
+}
+
+@mixin section($p-top: 26px, $p-bottom: 26px) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
+}
+
+@mixin flexed($al-it, $jc) {
+  display: flex;
+  align-items: $al-it;
+  justify-content: $jc;
+}
+
+@mixin flex-besed($items, $indent: 30px) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}

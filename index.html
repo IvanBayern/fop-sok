@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- slick css -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="mobile-header">
+          <a class="logo" href="">
+            <svg
+              class="logo__icon logo__icon--small"
+              width="100"
+              height="12"
+              aria-label="логотип компании"
+            >
+              <use href="./images/icons.svg#icon-logo-small"></use>
+            </svg>
+          </a>
+          <button
+            class="mobile-header__btn-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <svg class="header__icon" width="22" height="12">
+              <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+          <div class="menu js-menu-container" id="mobile-menu">
+            <a class="menu__logo logo" href="">
+              <svg
+                class="logo__icon logo__icon--small"
+                width="100"
+                height="12"
+                aria-label="логотип компании"
+              >
+                <use href="./images/icons.svg#icon-logo-small"></use>
+              </svg>
+            </a>
+            <button class="menu__close-btn js-close-menu" type="button">
+              <svg class="menu__icon" width="24" height="24" aria-label="кнопка закрытитя меню">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Характеристики</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#history">История</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Оплата и доставка</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="desktop-header">
+          <a class="logo" href="/">
+            <svg
+              class="logo__icon logo__icon--big"
+              width="130"
+              height="16"
+              aria-label="логотип компании"
+            >
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <nav>
+            <ul class="desktop-header__list">
+              <li>
+                <a class="desktop-header__link" href="#">Характеристики</a>
+              </li>
+              <li>
+                <a class="desktop-header__link" href="#history">История</a>
+              </li>
+              <li>
+                <a class="desktop-header__link" href="#">Отзывы</a>
+              </li>
+              <li>
+                <a class="desktop-header__link" href="#">Оплата и доставка</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <p class="hero__text">
+              Наушники с шумоподавлением, <br />
+              которые способны на многое
+            </p>
+            <p class="hero__text">
+              До 20 часов <br />
+              воспроизведения
+            </p>
+
+            <div class="hero__title-container">
+              <h1 class="hero__title">Наушники Bose NC 700</h1>
+              <button class="hero__btn" type="button">Замовити</button>
+            </div>
+          </div>
+          <img
+            class="hero__image"
+            srcset="
+              ./images/hero/mobile/hero-mob280.jpg        280w,
+              ./images/hero/mobile/hero-mob560@2x.jpg     560w,
+              ./images/hero/mobile/hero-mob840@3x.jpg     840w,
+              ./images/hero/tablet/hero-tab354.jpg        354w,
+              ./images/hero/tablet/hero-tab708@2x.jpg     708w,
+              ./images/hero/tablet/hero-tab1062@3x.jpg   1062w,
+              ./images/hero/desktop/hero-desk700.jpg      700w,
+              ./images/hero/desktop/hero-desk1400@2x.jpg 1400w,
+              ./images/hero/desktop/hero-desk2100@3x.jpg 2100w
+            "
+            src="./images/hero/desktop/hero-desk700.jpg"
+            alt="наушники"
+            sizes="(min-width: 1440px) 700px , (min-width: 768px) 354px, (min-width: 320px) 280px, 100vw"
+          />
+        </div>
+      </section>
+      <!-- design section -->
+      <section class="design">
+        <div class="design__container container">
+          <div>
+            <h2 class="design__title">Премиальный дизайн и комфорт</h2>
+            <ul class="design__list">
+              <li class="design__item">
+                <h3 class="design__subtitle">11 уровней шумоподавления</h3>
+                <p>
+                  С новыми наушниками Bose Noise Cancelling Headphone 700 можно плавно увеличить или
+                  уменьшить уровень шумоподавления. Вас слышно отлично и вы слышите собеседника
+                  четко, даже в шумной обстановке!
+                </p>
+              </li>
+              <li class="design__item">
+                <h3 class="design__subtitle">Комфорт на максимум</h3>
+                <p>
+                  Стильная, легкая дужка из нержавеющей стали с мягкими, расположенными под углом
+                  чашками наушников для комфортной посадки. Внутренняя сторона выполнена из мягкой
+                  гелевой подкладки, которая хорошо прилегает к голове.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img
+            class="design__image"
+            srcset="
+              ./images/design/mobile/design-mob280.jpg        280w,
+              ./images/design/mobile/design-mob560@2x.jpg     560w,
+              ./images/design/mobile/design-mob840@3x.jpg     840w,
+              ./images/design/tablet/design-tab354.jpg        354w,
+              ./images/design/tablet/design-tab708@2x.jpg     708w,
+              ./images/design/tablet/design-tab1062@3x.jpg   1062w,
+              ./images/design/desktop/design-desk590.jpg      590w,
+              ./images/design/desktop/design-desk1180@2x.jpg 1180w,
+              ./images/design/desktop/design-desk1770@3x.jpg 1770w
+            "
+            src="./images/design/desktop/design-desk590.jpg"
+            alt="девушка в наушниках"
+            sizes="(min-width: 1440px) 590px , (min-width: 768px) 354px, (min-width: 320px) 280px, 100vw"
+          />
+        </div>
+      </section>
+      <!-- benefits section -->
+      <section class="benefits">
+        <div class="container">
+          <h2 class="benefits__title">
+            способны <br class="benefits__transposition" />
+            на многое
+          </h2>
+          <div class="benefits-container">
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-point"></use>
+                </svg>
+                <p>Возможность принимать звонки</p>
+              </li>
+              <li class="benefits__item">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-point"></use>
+                </svg>
+                <p>Насыщенное и мощное звучание</p>
+              </li>
+              <li class="benefits__item">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-point"></use>
+                </svg>
+                <p>Опция активного шумоподавления</p>
+              </li>
+            </ul>
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-point"></use>
+                </svg>
+                <p>Непревзойденная система микрофонов</p>
+              </li>
+
+              <li class="benefits__item">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-point"></use>
+                </svg>
+                <p>Поддержка голосовых помощников</p>
+              </li>
+              <li class="benefits__item">
+                <svg class="benefits__icon" width="13" height="13" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-point"></use>
+                </svg>
+                <p>Аудиоплатформа дополненной реальности Bose AR</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- promo section -->
+      <section class="promo">
+        <div class="container">
+          <h2 class="promo__title">Роскошь тишины</h2>
+          <img
+            class="promo__image"
+            srcset="
+              ./images/promo/mobile/promo-mob280.jpg        280w,
+              ./images/promo/mobile/promo-mob560@2x.jpg     560w,
+              ./images/promo/mobile/promo-mob840@3x.jpg     840w,
+              ./images/promo/tablet/promo-tab768.jpg        768w,
+              ./images/promo/tablet/promo-tab1536@2x.jpg   1536w,
+              ./images/promo/tablet/promo-tab2304@3x.jpg   2304w,
+              ./images/promo/desktop/promo-desk1440.jpg    1440w,
+              ./images/promo/desktop/promo-desk2880@2x.jpg 2880w,
+              ./images/promo/desktop/promo-desk4320@3x.jpg 4320w
+            "
+            src="./images/promo/desktop/promo-desk1440.jpg"
+            alt="наушники на скамейке"
+            sizes="(min-width: 1440px) 1440px, (min-width: 768px) 768px, (min-width: 320px) 280px, 100vw"
+          />
+          <ul class="promo__list">
+            <li class="promo__item">
+              <h3 class="promo__substyle">Максимальное наслаждение</h3>
+              <p class="promo__text">
+                Для того чтобы создать комфортную атмосферу — поднимайте уровень за уровнем от
+                "прозрачного" режима до максимального блокирования звуков. Режим разговора можно
+                активировать в один клик с помощью специальной кнопки.
+              </p>
+            </li>
+            <li class="promo__item">
+              <h3 class="promo__substyle">Хрустальный звук</h3>
+              <p class="promo__text">
+                Система динамиков и фирменный активный эквалайзер способны обеспечить качественный и
+                мощный звук на любом уровне громкости. Вы можете быть уверены в отсутствии искажений
+                и кристальной чистоте высоких и низких частот.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- features section -->
+      <section class="features">
+        <div class="container">
+          <div class="features__container">
+            <div class="features__content">
+              <h2 class="features__title">Bose AR</h2>
+              <h3 class="features__subtitle">Фирменная технология</h3>
+              <p class="features__text">
+                Bose AR — это уникальная аудиоплатформа дополненной реальности, что открывает перед
+                вами новые грани звучания. Она позволяет вам оставаться на связи с реальным миром и
+                одновременно погружаться в виртуальную вселенную.
+              </p>
+            </div>
+            <img
+              class="features__image"
+              srcset="
+                ./images/features/mobile/features-mob280.jpg        280w,
+                ./images/features/mobile/features-mob560@2x.jpg     560w,
+                ./images/features/mobile/features-mob840@3x.jpg     840w,
+                ./images/features/tablet/features-tab354.jpg        354w,
+                ./images/features/tablet/features-tab708@2x.jpg     708w,
+                ./images/features/tablet/features-tab1062@3x.jpg   1062w,
+                ./images/features/desktop/features-desk700.jpg      700w,
+                ./images/features/desktop/features-desk1400@2x.jpg 1400w,
+                ./images/features/desktop/features-desk2100@3x.jpg 2100w
+              "
+              src="./images/features/desktop/features-desk700.jpg"
+              alt="девушка в наушниках"
+              sizes="(min-width: 1440px) 700px, (min-width: 768px) 354px, (min-width: 320px) 280px, 100vw"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- garanties section -->
+      <section class="garanties">
+        <div class="container">
+          <div class="garanties__container">
+            <img
+              class="garanties__image"
+              srcset="
+                ./images/garanties/mobile/garanties-mob280.jpg        280w,
+                ./images/garanties/mobile/garanties-mob560@2x.jpg     560w,
+                ./images/garanties/mobile/garanties-mob840@3x.jpg     840w,
+                ./images/garanties/tablet/garanties-tab354.jpg        354w,
+                ./images/garanties/tablet/garanties-tab708@2x.jpg     708w,
+                ./images/garanties/tablet/garanties-tab1062@3x.jpg   1062w,
+                ./images/garanties/desktop/garanties-desk590.jpg      590w,
+                ./images/garanties/desktop/garanties-desk1180@2x.jpg 1180w,
+                ./images/garanties/desktop/garanties-desk1770@3x.jpg 1770w
+              "
+              src="./images/garanties/desktop/garanties-desk590.jpg"
+              alt="белые наушники"
+              sizes="(min-width: 1440px) 590px, (min-width: 768px) 354px, (min-width: 320px) 280px, 100vw"
+            />
+            <div class="garanties__content">
+              <h2 class="garanties__title">Гарантии</h2>
+              <ul>
+                <li class="garanties__item">
+                  <svg class="garanties__icon" width="13" height="13" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-point"></use>
+                  </svg>
+                  <h3 class="garanties__subtitle">Гарантия возврата денег в течение 90 дней</h3>
+                  <p>
+                    Если вы не удовлетворены продуктом на 100% вы можете вернуть его обратно и
+                    получить полный возврат денег
+                  </p>
+                </li>
+                <li class="garanties__item">
+                  <svg class="garanties__icon" width="13" height="13" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-point"></use>
+                  </svg>
+                  <h3 class="garanties__subtitle">1 год гарантии</h3>
+                  <p>
+                    Вне зависимости от страны вашего проживания, если ваши наушники сломались, мы
+                    вышлем вам новые
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- brandhistory section -->
+      <section class="brandhistory" id="history">
+        <div class="container">
+          <div class="brandhistory__container">
+            <h2 class="brandhistory__title">история <br />создания <br />бренда</h2>
+            <p class="brandhistory__text">
+              История Bose Corporation началась с разочарования. В 1956 году аспирант
+              Массачусетского технологического института Амар Боуз (Amar Bose) приобрёл одну из
+              лучших по тем временам стереосистем для своего дома. После нескольких минут
+              прослушивания аудиозаписи его недоумение сменилось разочарованием.
+            </p>
+            <img
+              class="brandhistory__image brandhistory__image-top"
+              srcset="
+                ./images/brand-history/mobile/brandhistory-1-mob280.jpg        280w,
+                ./images/brand-history/mobile/brandhistory-1-mob560@2x.jpg     560w,
+                ./images/brand-history/mobile/brandhistory-1-mob840@3x.jpg     840w,
+                ./images/brand-history/tablet/brandhistory-1-tab354.jpg        354w,
+                ./images/brand-history/tablet/brandhistory-1-tab708@2x.jpg     708w,
+                ./images/brand-history/tablet/brandhistory-1-tab1062@3x.jpg   1062w,
+                ./images/brand-history/desktop/brandhistory-1-desk700.jpg      700w,
+                ./images/brand-history/desktop/brandhistory-1-desk1400@2x.jpg 1400w,
+                ./images/brand-history/desktop/brandhistory-1-desk2100@3x.jpg 2100w
+              "
+              src="./images/brand-history/desktop/brandhistory-1-desk700.jpg"
+              alt="Трое мужчин рассматривают фотографии"
+              sizes="(min-width: 1440px) 700px, (min-width: 768px) 354px, (min-width: 320px) 280px, 100vw"
+            />
+            <p class="brandhistory__text">
+              С точки зрения Амара звук был настолько плоским и неестественным, что лучше не слушать
+              музыку вовсе, чем слушать её в столь искажённом виде.
+            </p>
+            <p class="brandhistory__text">
+              Разочарование Боуза переросло в твёрдую решимость – создавать аудиотехнику, которая
+              будет передавать звук безупречно точно и естественно.
+            </p>
+            <img
+              class="brandhistory__image brandhistory__image-bottom"
+              srcset="
+                ./images/brand-history/mobile/brandhistory-2-mob280.jpg      280w,
+                ./images/brand-history/mobile/brandhistory-2-mob560@2x.jpg   560w,
+                ./images/brand-history/mobile/brandhistory-2-mob840@3x.jpg   840w,
+                ./images/brand-history/tablet/brandhistory-2-tab294.jpg      294w,
+                ./images/brand-history/tablet/brandhistory-2-tab588@2x.jpg   588w,
+                ./images/brand-history/tablet/brandhistory-2-tab882@3x.jpg   882w,
+                ./images/brand-history/desktop/brandhistory-2-desk290.jpg    290w,
+                ./images/brand-history/desktop/brandhistory-2-desk580@2x.jpg 580w,
+                ./images/brand-history/desktop/brandhistory-2-desk870@3x.jpg 870w
+              "
+              src="./images/brand-history/desktop/brandhistory-2-desk290.jpg"
+              alt="на фотографии основатель компании Амар Боуз"
+              sizes="(min-width: 1440px) 290px, (min-width: 768px) 294px, (min-width: 320px) 280px, 100vw"
+            />
+            <svg class="brandhistory__icon" width="34" height="25">
+              <use href="./images/icons.svg#icon-quotes"></use>
+            </svg>
+            <p class="brandhistory__text">
+              Никогда не переставайте мечтать. Всегда мечтайте о лучшем, и думайте о том, как этого
+              достичь.
+            </p>
+            <p class="brandhistory__text">Основатель компании Амар Боуз</p>
+          </div>
+        </div>
+      </section>
+      <!-- review section -->
+      <section class="review">
+        <div class="container">
+          <div class="fade">
+            <div>
+              <h2 class="review__title">обзоры</h2>
+              <iframe
+                class="review__video"
+                width="968"
+                height="545"
+                src="https://www.youtube.com/embed/VqP11Ma_2Fk"
+                title="Bose | Bose Noise Cancelling Headphones 700 | Everybody’s Talking"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <a class="review__link" href="https://www.youtube.com/embed/VqP11Ma_2Fk"
+                >Bose Сorporation</a
+              >
+              <p class="review__text">
+                Critically acclaimed for their powerful noise cancelling, astonishing sound, and
+                unrivaled voice pickup, Bose Noise Cancelling Headphones 700 help turn any space
+                into the perfect place to listen to music, get work done, or just shut out the world
+                for a few moments and relax
+              </p>
+            </div>
+            <div>
+              <h2 class="review__title">обзоры</h2>
+              <iframe
+                class="review__video"
+                width="968"
+                height="545"
+                src="https://www.youtube.com/embed/BUyLpf-u97Y"
+                title="Bose Noise Cancelling Headphones 700 | Design and innovation as one"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <a class="review__link" href="https://www.youtube.com/embed/BUyLpf-u97Y"
+                >Bose Сorporation</a
+              >
+              <p class="review__text">
+                Bose Noise Cancelling Headphones 700 deliver everything you expect — and things you
+                never imagined possible. The perfect balance of quiet, comfort, and sound
+              </p>
+            </div>
+            <div>
+              <h2 class="review__title">обзоры</h2>
+              <iframe
+                class="review__video"
+                width="968"
+                height="545"
+                src="https://www.youtube.com/embed/NgtznBDFRUo"
+                title="Bose | Power of Sound - Open Your Heart and Mind with Infinite Possibilities"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <a class="review__link" href="https://www.youtube.com/embed/NgtznBDFRUo"
+                >Bose Сorporation</a
+              >
+              <p class="review__text">
+                Real stories of people tuning in or out to feel peace, find escape, and for
+                self-care
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- questions section -->
+      <section class="questions">
+        <div class="container">
+          <h2 class="questions__title">FAQ</h2>
+          <ul class="questions__list">
+            <li class="questions__item">
+              <span class="questions__number">01</span>
+              <div class="questions__content" data-action="0">
+                <h3 class="questions__subtitle">
+                  Как выполнить сопряжение с мобильным устройством?
+                </h3>
+              </div>
+              <button class="questions__btn" type="button">
+                <svg class="questions__icon" width="32" height="32" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-mark-question" data-action="0"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="questions__item">
+              <span class="questions__number">02</span>
+              <div class="questions__content" data-action="1">
+                <h3 class="questions__subtitle">
+                  Каков диапазон беспроводной связи у Bose NC 700?
+                </h3>
+              </div>
+              <button class="questions__btn" type="button">
+                <svg class="questions__icon" width="32" height="32" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-mark-question" data-action="1"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="questions__item">
+              <span class="questions__number">03</span>
+              <div class="questions__content" data-action="2">
+                <h3 class="questions__subtitle">Как сложить наушники Bose NC 700 для хранения?</h3>
+              </div>
+              <button class="questions__btn" type="button">
+                <svg class="questions__icon" width="32" height="32" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-mark-question" data-action="2"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="questions__item">
+              <span class="questions__number">04</span>
+              <div class="questions__content" data-action="3">
+                <h3 class="questions__subtitle">Работает ли гарантия на международном уровне?</h3>
+              </div>
+              <button class="questions__btn" type="button">
+                <svg class="questions__icon" width="32" height="32" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-mark-question" data-action="3"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- sales section -->
+      <section class="sales">
+        <div class="container">
+          <div class="sales__container">
+            <h2 class="sales__title">bose nc 700</h2>
+            <img
+              class="sales__img sales__img-black"
+              srcset="
+                ./images/sales/mobile/sales-mob280.jpg              280w,
+                ./images/sales/mobile/sales-mob560@2x.jpg           560w,
+                ./images/sales/mobile/sales-mob840@3x.jpg           840w,
+                ./images/sales/tablet/sales-black-tab648.jpg        648w,
+                ./images/sales/tablet/sales-black-tab1296@2x.jpg   1296w,
+                ./images/sales/tablet/sales-black-tab1944@3x.jpg   1944w,
+                ./images/sales/desktop/sales-black-desk700.jpg      700w,
+                ./images/sales/desktop/sales-black-desk1400@2x.jpg 1400w,
+                ./images/sales/desktop/sales-black-desk2100@3x.jpg 2100w
+              "
+              src="./images/sales/desktop/sales-black-desk700.jpg"
+              alt="навушники чорні"
+              sizes="(min-width: 1440px) 700px, (min-width: 768px) 648px, (min-width: 320px) 280px, 100vw"
+            />
+            <img
+              class="sales__img sales__img-grey"
+              srcset="
+                ./images/sales/tablet/sales-grey-tab648.jpg        648w,
+                ./images/sales/tablet/sales-grey-tab1296@2x.jpg   1296w,
+                ./images/sales/tablet/sales-grey-tab1944@3x.jpg   1944w,
+                ./images/sales/desktop/sales-grey-desk700.jpg      700w,
+                ./images/sales/desktop/sales-grey-desk1400@2x.jpg 1400w,
+                ./images/sales/desktop/sales-grey-desk2100@3x.jpg 2100w
+              "
+              src="./images/sales/desktop/sales-grey-desk700.jpg"
+              alt="навушники"
+              sizes="(min-width: 1440px) 700px, (min-width: 768px) 648px, (min-width: 320px) 280px, 100vw"
+            />
+            <button type="button" class="sales__btn-around sales__btn-around-black"></button>
+            <button type="button" class="sales__btn-around sales__btn-around-grey"></button>
+            <ul class="sales__list">
+              <li class="sales__item">
+                <p>Наличие в магазинах</p>
+                <button class="sales__btn-vector">
+                  <svg class="sales__icon" width="20" height="20" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-vector" data-action="0"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="sales__item">
+                <p>Характеристики</p>
+                <button class="sales__btn-vector">
+                  <svg class="sales__icon" width="20" height="20" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-vector" data-action="0"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="sales__item">
+                <p>Способы оплаты и доставки</p>
+                <button class="sales__btn-vector">
+                  <svg class="sales__icon" width="20" height="20" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-vector" data-action="0"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <p class="sales__price">14 999 UAH</p>
+            <button class="sales__btn">Замовити</button>
+          </div>
+        </div>
+      </section>
+      <!-- photo section -->
+      <section class="photo">
+        <div class="container">
+          <img
+            class="photo__img"
+            srcset="
+              ./images/photo/mobile/photo-mob280.jpg        280w,
+              ./images/photo/mobile/photo-mob560@2x.jpg     560w,
+              ./images/photo/mobile/photo-mob840@3x.jpg     840w,
+              ./images/photo/tablet/photo-tab648.jpg        648w,
+              ./images/photo/tablet/photo-tab1296@2x.jpg   1296w,
+              ./images/photo/tablet/photo-tab1944@3x.jpg   1944w,
+              ./images/photo/desktop/photo-desk1440.jpg    1440w,
+              ./images/photo/desktop/photo-desk2880@2x.jpg 2880w,
+              ./images/photo/desktop/photo-desk4320@3x.jpg 4320
+            "
+            src="./images/photo/desktop/photo-desk1440.jpg"
+            alt="Дівчина в навушниках"
+            sizes="(min-width: 1440px) 1440px, (min-width: 768px) 648px, (min-width: 320px) 280px, 100vw"
+          />
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <form autocomplete="off">
+            <h2 class="feedback__title">зворотній зв'язок</h2>
+            <p class="feedback__action">Ми допоможемо підібрати вам відповідні навушники</p>
+            <label> <input type="text" name="name" placeholder="Ваше ім'я" /> </label
+            ><label>
+              <input type="email" name="email" placeholder="Ваш e-mail" />
+            </label>
+            <label>
+              <textarea name="feedback" rows="3" placeholder="Нанишить нам повідомлення"></textarea>
+            </label>
+            <label>
+              <input type="checkbox" name="feedback" />
+            </label>
+            <button type="submit">Відправити</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- <footer>
+      <div class="contaiher">
+        <ul class="footer-list">
+          <li class="footer-item"><a href="">Характеристики</a></li>
+          <li class="footer-item"><a href="">История</a></li>
+          <li class="footer-item"><a href="">Отзывы</a></li>
+          <li class="footer-item"><a href="">Оплата и доставка</a></li>
+          <li class="footer-item"><a href="">Адреса магазинов</a></li>
+          <li class="footer-item"><a href="FAQ"></a></li>
+          <li class="footer-item"><a href="">8 (800) 111-11-11</a></li>
+        </ul>
+      </div>
+    </footer> -->
+    <script type="module" src="./js/questions.js"></script>
+    <!-- slick jquery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="./js/slick.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>

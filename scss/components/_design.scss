@@ -1,0 +1,58 @@
+.design {
+  @include section;
+  @include mq(tab) {
+    @include section(50px, 50px);
+  }
+  @include mq(desk) {
+    @include section(85px, 85px);
+  }
+}
+
+.design__container {
+  @include mq(tab) {
+    @include flexed(flex-start, null);
+    flex-direction: row-reverse;
+    gap: 60px;
+  }
+  @include mq(desk) {
+    gap: 150px;
+  }
+}
+
+.design__title {
+  @extend %title;
+}
+@include mq(desk) {
+  .design__list {
+    width: 510px;
+  }
+}
+.design__item:nth-child(1) {
+  margin-bottom: 24px;
+  @include mq(desk) {
+    margin-bottom: 40px;
+  }
+}
+
+@include mq(mob-only) {
+  .design__item:nth-child(2) {
+    margin-bottom: 32px;
+  }
+}
+
+.design__subtitle {
+  @extend %subtitle;
+  margin-bottom: 16px;
+  @include mq(desk) {
+    margin-bottom: 20px;
+  }
+}
+
+.design__image {
+  @include mq(tab) {
+    margin-left: -60px;
+  }
+  @include mq(desk) {
+    margin-left: -80px;
+  }
+}

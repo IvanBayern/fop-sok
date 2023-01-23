@@ -1,0 +1,56 @@
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 20px 0 20px;
+  transform: translateY(-120%);
+  transition-property: transform;
+
+  background-color: var(--bg-color-primery);
+
+  @include mq(tab-only) {
+    height: auto;
+    padding: 50px 60px 100px 60px;
+    box-shadow: 0px 20px 80px #000000;
+  }
+
+  &.is-open {
+    transform: translateY(0);
+  }
+}
+
+.menu__logo {
+  margin-bottom: 52px;
+}
+
+.menu__close-btn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  fill: var(--color-text-primery);
+
+  @include mq(tab-only) {
+    top: 50px;
+    right: 60px;
+  }
+}
+
+.menu__list {
+  font-size: 14px;
+  line-height: 1.25;
+
+  @include mq(tab) {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 24px;
+}

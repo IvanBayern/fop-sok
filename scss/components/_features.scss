@@ -1,0 +1,53 @@
+.features {
+  @include section;
+  @include mq(tab) {
+    @include section(50px, 50px);
+  }
+  @include mq(desk) {
+    @include section(85px, 85px);
+  }
+}
+
+.features__container {
+  @include mq(tab) {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+  }
+  @include mq(desk) {
+    gap: 170px;
+    margin-left: 110px;
+  }
+}
+@include mq(desk) {
+  .features__content {
+    width: 380px;
+  }
+}
+
+.features__title {
+  @extend %title;
+}
+
+.features__subtitle {
+  @extend %subtitle;
+  margin-bottom: 16px;
+  @include mq(desk) {
+    margin-bottom: 20px;
+  }
+}
+
+@include mq(mob-only) {
+  .features__text {
+    margin-bottom: 32px;
+  }
+}
+
+.features__image {
+  @include mq(tab) {
+    margin-right: -60px;
+  }
+  @include mq(desk) {
+    margin-right: -80px;
+  }
+}

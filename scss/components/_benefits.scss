@@ -1,0 +1,48 @@
+.benefits {
+  @include section;
+  @include mq(tab) {
+    @include section(50px, 50px);
+  }
+  @include mq(desk) {
+    @include section(85px, 85px);
+  }
+}
+
+.benefits__title {
+  @extend %title;
+  @include mq(desk) {
+    margin-left: 110px;
+  }
+}
+
+@include mq(tab) {
+  .benefits__transposition {
+    display: none;
+  }
+}
+
+@include mq(desk) {
+  .benefits-container {
+    @include flexed(null, null);
+    gap: 184px;
+    margin-left: 110px;
+  }
+}
+
+@include mq(no-desk) {
+  .benefits__list:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.benefits__item {
+  @include flexed(center, null);
+  gap: 24px;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 16px;
+  @include mq(desk) {
+    margin-bottom: 20px;
+  }
+}
